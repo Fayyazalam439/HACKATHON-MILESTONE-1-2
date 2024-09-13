@@ -1,0 +1,261 @@
+body{
+    background-color: silver;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#parent{
+    width: 800px;
+    max-width: 800px;
+    height: auto;
+    border: 5px solid aqua;
+    background-color: black ;
+    border-radius: 2%;
+    padding: 20px;
+    margin: 20px auto;
+}
+#SR{
+    font-size: 2.5rem;
+    text-decoration:underline; text-decoration-color: aqua;
+    font-style: italic;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    border: 5px solid aqua;
+    border-radius: 50%;
+    background-image: url("F.A.jpg");
+    background-size:cover;
+    /* position: relative;
+    left: 36%; */
+    background-position: center;
+    margin: 20px auto;
+}
+
+#PI{
+    width: 250px;
+    max-width: 300px;
+    height: 110px;
+    border: 3px solid black;
+    /* position: relative;
+    left: 33%; */
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+#name{
+    font-size: 38px;
+    position: relative;
+    bottom: 37%;
+    font-style: italic;
+}
+#line{
+    height: 1px;
+    width: 95%;
+    border: 1px solid aqua;
+    background-color: aqua;
+    position: relative;
+    bottom: 70%;
+    left: 2%;
+}
+#contact{
+    position: relative;
+    right: 11.5%;
+    top: 3%;
+}
+#EC{
+    position: relative;
+    bottom: 65%;
+}
+#line1{
+    height: 1px;
+    width: 95%;
+    border: 1px solid aqua;
+    background-color: aqua;
+    position: relative;
+    bottom: 63%;
+    left: 2%;
+}
+
+#newupdates{
+    /* height: 250px;
+    width: 780px;
+    border: none;
+    position: relative;
+    left: 0%;
+    bottom: 2.5%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#education{
+    height: 235px;
+    width: 240px;
+    border: 5px solid aqua;
+    position: relative;
+    border-radius: 2%;
+}
+#skills{
+    height: 235px;
+    width: 240px;
+    border: 5px solid aqua;
+    position: relative;
+    border-radius: 2%;
+}
+#workexperience{
+    height: 235px;
+    width: 240px;
+    border: 5px solid aqua;
+    position: relative;
+    border-radius: 2%;
+}
+h3{
+    position: relative;
+    right: 28%;
+    bottom: 4%;
+    text-decoration:underline; text-decoration-color: aqua;
+}
+#s{
+    position: relative;
+    right: 36%;
+}
+#wo{
+    position: relative;
+    right:35px;
+}
+/* #button1{
+    width: 80px;
+    height: 35px;
+    background-color: aqua;
+    border: none;
+}
+#button2{
+    width: 60px;
+    height: 35px;
+    background-color: aqua;
+    border: none;
+} 
+#button3{
+    width: 80px;
+    height: 35px;
+    background-color: aqua;
+    border: none;
+}   */
+button{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}   
+
+button:hover {
+    background-color: #00ced1;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+}
+
+#education ul, #skills ul, #workexperience ul {
+    list-style-type: disc; 
+    padding-left: 25px; 
+    text-align: left; 
+    margin-left: 0; 
+}
+#education ul li, #skills ul li, #workexperience ul li {
+    margin-left: 0; 
+    text-align: left; 
+}
+
+/* For devices with max width 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+    #parent {
+        width: 100%;
+        padding: 10px;
+        border-width: 3px;
+    }
+
+    #SR {
+        font-size: 1.8rem; /* Smaller font for header */
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+        margin: 10px auto; /* Adjust image size and margin */
+    }
+
+    #PI {
+        width: 90%; /* Make the personal info section wider on small screens */
+        padding: 5px;
+    }
+
+    #name {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100px; /* Adjust button sizes for smaller screens */
+        padding: 5px 10px;
+    }
+
+    #newupdates {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    #education, #skills, #workexperience {
+        width: 90%; /* Make each section 90% of the screen */
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        text-align: center; /* Center align the headings */
+    }
+
+    span {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+}
+
+/* For very small devices like mobile phones (max width 480px) */
+@media (max-width: 480px) {
+    #SR {
+        font-size: 1.4rem; /* Further reduce header font size */
+    }
+
+    .photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #name {
+        font-size: 1.2rem;
+    }
+
+    button {
+        width: 80px; /* Further reduce button size */
+        padding: 5px;
+    }
+
+    #education, #skills, #workexperience {
+        width: 100%; /* Take full width on very small devices */
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
