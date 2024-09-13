@@ -178,7 +178,6 @@ span{
     text-align: left; 
 }
 
-/* For devices with max width 768px (tablets and smaller screens) */
 @media (max-width: 768px) {
     #parent {
         width: 100%;
@@ -187,17 +186,17 @@ span{
     }
 
     #SR {
-        font-size: 1.8rem; /* Smaller font for header */
+        font-size: 1.8rem; 
     }
 
     .photo {
         width: 150px;
         height: 150px;
-        margin: 10px auto; /* Adjust image size and margin */
+        margin: 10px auto; 
     }
 
     #PI {
-        width: 90%; /* Make the personal info section wider on small screens */
+        width: 90%; 
         padding: 5px;
     }
 
@@ -206,35 +205,35 @@ span{
     }
 
     button {
-        width: 100px; /* Adjust button sizes for smaller screens */
+        width: 100px;
         padding: 5px 10px;
     }
 
     #newupdates {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     #education, #skills, #workexperience {
-        width: 90%; /* Make each section 90% of the screen */
+        width: 90%; 
         margin-bottom: 20px;
     }
 
     h3 {
         font-size: 1.5rem;
-        text-align: center; /* Center align the headings */
+        text-align: center; 
     }
 
     span {
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: column; 
         align-items: center;
     }
 }
 
-/* For very small devices like mobile phones (max width 480px) */
+
 @media (max-width: 480px) {
     #SR {
-        font-size: 1.4rem; /* Further reduce header font size */
+        font-size: 1.4rem; 
     }
 
     .photo {
@@ -247,12 +246,12 @@ span{
     }
 
     button {
-        width: 80px; /* Further reduce button size */
+        width: 80px;
         padding: 5px;
     }
 
     #education, #skills, #workexperience {
-        width: 100%; /* Take full width on very small devices */
+        width: 100%;
     }
 
     h3 {
